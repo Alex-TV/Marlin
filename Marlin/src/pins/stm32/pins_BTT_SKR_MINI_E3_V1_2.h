@@ -49,7 +49,7 @@
 //
 #define X_STOP_PIN         PC0
 #define Y_STOP_PIN         PC1
-#define Z_STOP_PIN         PC2
+#define Z_STOP_PIN         PC14//PC2
 
 //
 // Z Probe must be this pins
@@ -60,7 +60,7 @@
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN   PC15   // "E0-STOP"
+  #define FIL_RUNOUT_PIN   PC12
 #endif
 
 //
@@ -100,9 +100,6 @@
 
   #define E0_SERIAL_TX_PIN PC11
   #define E0_SERIAL_RX_PIN PC11
-
-  // Reduce baud rate to improve software serial reliability
-  #define TMC_BAUD_RATE 19200
 #endif
 
 //

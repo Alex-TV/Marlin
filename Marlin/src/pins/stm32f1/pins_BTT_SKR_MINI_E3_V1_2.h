@@ -49,3 +49,7 @@
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE 19200
 #endif
+ 
+//#define SPINDLE_LASER_ENA_PIN               PB9  // Pullup or pulldown!
+//#define SPINDLE_LASER_PWM_PIN               PB6  // Hardware PWM
+#define   FAN1_PIN                            PB6
